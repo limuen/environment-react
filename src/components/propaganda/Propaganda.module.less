@@ -1,0 +1,68 @@
+.propaganda {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 0px rgba(5, 97, 22, 0.14);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    .propaganda-content {
+        width: 1845px;
+        margin: auto;
+        .propaganda-title {
+            height: 55px;
+            line-height: 55px;
+            width: 100%;
+            border-bottom: 1px solid #D2D2D2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+            span:nth-child(1) {
+                color: #0FB1C8;
+                margin-left: 16px;
+            }
+            span:nth-child(2) {
+                cursor: pointer;
+                margin-right: 16px;
+            }
+        }
+        .propaganda-banner {
+            height: 427px;
+            // width: 100%;
+            border-top: 1px transparent solid;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            .propaganda-banner-Margin {
+                margin-top: 80px;
+                position: relative;
+                padding: 0px 72px;
+                :global(.swiper-container) {
+                    position: static;
+                }
+                :global(.swiper-button-prev),:global(.swiper-button-next) {
+                    color:#1DD3D5 !important;
+                    width: 41px !important;
+                    height: 67px !important;
+                    top: 47%;
+                }
+                :global(.swiper-button-prev:after), :global(.swiper-button-next:after) {
+                    font-size: 67px !important;
+                    font-weight: bold;
+                }
+                .propaganda-banner-content {
+                    cursor: pointer;
+                    height: 273px;
+                    background: #818181;
+                    box-shadow: 0px 0px 4px 0px rgba(0, 13, 3, 0.72);
+                    width: 390px !important;
+                    text-align: center;
+                    line-height: 273px;
+                    :global(.swiper-slide) {
+                        width: 390px;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}

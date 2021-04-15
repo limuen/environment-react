@@ -1,0 +1,78 @@
+.advisory {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px 0px rgba(5, 97, 22, 0.14);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+    .advisory-content {
+        width: 1845px;
+        margin: auto;
+        .advisory-title {
+            height: 55px;
+            line-height: 55px;
+            width: 100%;
+            border-bottom: 1px solid #D2D2D2;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+            span:nth-child(1) {
+                color: #0FB1C8;
+                margin-left: 16px;
+            }
+            span:nth-child(2) {
+                cursor: pointer;
+                margin-right: 16px;
+            }
+        }
+        .advisory-list {
+            display: flex;
+            padding: 56px 40px;
+            border-bottom: 1px solid #D2D2D2;;
+            .advisory-list-img {
+                cursor: pointer;  
+                width: 394px;
+                height: 273px;
+                overflow: hidden;
+                border-radius: 10px;
+                margin-right: 22px;
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    transition: all 1.2s;
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .advisory-list-content {
+                cursor: pointer;
+                flex: 1;
+                justify-content: center;
+                p {
+                    color: #1F2622;
+                    margin: 0px;
+                }
+                p:nth-child(1) {
+                    margin: 30px 0px 20px 0px;
+                    font-size: 30px;
+                    line-height: 48px;
+                    text-indent: 1em;
+                }
+                p:nth-child(2) {
+                    font-size: 18px;
+                    line-height: 40px;
+                    margin-bottom: 45px;
+                }
+                p:nth-last-child(1){
+                    text-align: right;
+                    font-size: 18px;
+                }
+            }
+            &:nth-last-child(1) {
+                border-bottom: none;
+            }
+        }
+    }
+}

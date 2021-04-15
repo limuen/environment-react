@@ -1,0 +1,151 @@
+.header {
+    background: linear-gradient(90deg, #1DC8E4, #1DE7B8);
+    .header-top {
+        height: 46px;
+        display: flex;
+        .header-list {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            li {
+                line-height: 46px;
+                font-size: 16px;
+                font-family: Adobe Heiti Std;
+                font-weight: normal;
+                color: #FFFFFF;
+                margin-left: 38px;
+                cursor: pointer;
+                &:nth-last-child(1){
+                    margin-right: 59px;
+                }
+            }
+        }
+    }
+    .header-route-search {
+        :global(.ant-layout-header) {
+            padding: 0px !important;
+        }
+        border-bottom: 2px solid #1FA759;
+        box-sizing: border-box;
+        .header-bottom {
+            background-color: #FFFFFF !important;
+            height: 210px;
+            border-top: 1px solid transparent;
+            .header-bottom-search {
+                margin: 40px 0px 33px 0px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .App-logo {
+                    width: 220px;
+                    height: 59px;
+                    position: absolute;
+                    left: 75px;
+                    top: 10px;
+                    cursor: pointer;
+                 }
+                 .search-input {
+                    width: 1097px;
+                    height: 72px;
+                    border: 4px #0EB7CF solid;;
+                    border-radius: 10px;
+                    line-height: 72px;
+                    box-sizing: border-box;
+                 }
+                 :global(.ant-input-group .ant-input) {
+                    height: 64px;
+                    border: none;
+                    padding: 0px 10px;
+                    font-size: 25px;
+                    outline:none;
+                    border-radius: 10px;
+                 }
+                 :global(.ant-input:focus) {
+                    border:0 none !important;
+                    box-shadow: none;
+                 }
+                 :global(.ant-input-group-addon) {
+                    width: 92px !important;
+                    height: 72px !important;
+                    background: linear-gradient(90deg, #1DC8E4, #1DE7B8);
+                    top: -4px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                 }
+                 :global(.ant-input-search > .ant-input-group > .ant-input-group-addon:last-child) {
+                    left: 4px;
+                 }
+                 :global(.ant-input-search-button) {
+                    height: 44px;
+                    width: 44px;
+                 }
+                 :global(.ant-btn-primary) {
+                    color: #fff;
+                    background: linear-gradient(90deg, #1DC8E4, #1DE7B8);
+                    border: none;
+                    outline:none;
+                 }
+                 :global(.ant-btn) {
+                    padding: 0px !important;
+                    font-size: 35px;
+                    box-shadow: none;
+                    line-height: 45px;
+                 }
+            }
+            .header-bottom-menu {
+                :global(.ant-menu) {
+                   display: flex;
+                   justify-content: center;
+                }
+                :global(.ant-menu.ant-menu-dark .ant-menu-item-selected), :global(.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover) {
+                    background: linear-gradient(90deg, #1DC8E4, #1DE7B8);
+                }
+                :global(.ant-menu-horizontal) {
+                    border:none
+                }
+                :global(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected), :global(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover) {
+                    color: #ffffff;
+                    border: none !important;
+                    background: linear-gradient(90deg, #1DC8E4, #1DE7B8);
+                }
+                :global(.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item) {
+                    width: 135px;
+                    text-align: center;
+                    border-radius: 10px 10px 0px 0px;
+                    font-size: 30px;
+                    font-family: Adobe Heiti Std;
+                    font-weight: normal;
+                }
+                :global(.ant-menu-horizontal > .ant-menu-item) {
+                    border: none;
+                }
+                :global(.ant-menu-horizontal > .ant-menu-item a:hover) {
+                    color: #fff !important;
+                }
+                :global(.ant-menu-horizontal > .ant-menu-item-selected a ){
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+}
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
